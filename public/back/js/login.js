@@ -69,9 +69,10 @@ $(function(){
         //判断,若请求成功,则直接跳转到首页,
         //通过后台打印出的结果,可得,若用户名不存在,返回的是1000,若密码错误,则返回的是1001
         if(info.success){
-          setInterval(function(){
-            location.href="./index.html";
-          },2000)   
+          // setInterval(function(){
+          //   location.href="./index.html";
+          // },2000)   
+          location.href="index.html";
         }else{
           if(info.error ===1000 ){
             alert("用户名不存在");
